@@ -8,6 +8,7 @@ function mostrar()
 	miArray[2]="Maria";
 	miArray[3]="Nahuel";
 	miArray[4]="Yolanda";
+	miArray[5]="Yolanda";
 
 
 document.write("El contenido del vector es: <br>");
