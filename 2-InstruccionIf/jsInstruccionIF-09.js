@@ -1,6 +1,6 @@
+let = randNum;
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
-
+	randNum = Math.random() * (10 - 1) + 1;
+	alert("el numero random es " + randNum.toFixed(2));
 }//FIN DE LA FUNCIÓN
