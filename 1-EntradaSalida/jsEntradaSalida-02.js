@@ -1,8 +1,11 @@
 /*
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
+let mensaje;
+
 function mostrar()
 {
-	alert("ok");
+	mensaje = prompt("deje su mensaje aqui");
+	alert(mensaje);
 }
 
