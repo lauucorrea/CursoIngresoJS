@@ -6,6 +6,6 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 function mostrar()
 {	
 	let valor = prompt('ingrese un nombre');
-	txtIdNombre.value = valor;
+	document.getElementById("txtIdNombre").value = valor;
 }
 

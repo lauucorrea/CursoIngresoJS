@@ -6,8 +6,8 @@ ej.: "El resto es 0 ."*/
 let valNum1,valNum2,resto;
 function SacarResto()
 {
-	valNum1=parseInt(txtIdNumeroDividendo.value);
-	valNum2=parseInt(txtIdNumeroDivisor.value);
+	valNum1=parseInt(document.getElementById("txtIdNumeroDividendo").value);
+	valNum2=parseInt(document.getElementById("txtIdNumeroDivisor").value);
 	if(valNum2 === 0){
 		alert("no se puede dividir por 0");
 	}else{

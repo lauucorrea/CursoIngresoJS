@@ -7,8 +7,8 @@ let valSueldo,resultado;
 
 function mostrarAumento()
 {
-	valSueldo = parseInt(txtIdSueldo.value);
+	valSueldo = parseInt(document.getElementById("txtIdSueldo").value);
 	resultado = valSueldo + ((valSueldo*10)/100);
 
-	txtIdResultado.value = resultado;
+	document.getElementById("txtIdResultado").value = resultado;
 }

@@ -7,8 +7,8 @@ let valImporte,resultado;
 
 function mostrarAumento()
 {
-	valImporte = parseInt(txtIdImporte.value);
+	valImporte = parseInt(document.getElementById("txtIdImporte").value);
 	resultado = valImporte - ((valImporte*25)/100);
 
-	txtIdResultado.value = resultado;
+	document.getElementById("txtIdResultado").value = resultado;
 }

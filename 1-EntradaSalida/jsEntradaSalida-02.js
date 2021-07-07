@@ -8,4 +8,3 @@ function mostrar()
 	mensaje = prompt("deje su mensaje aqui");
 	alert(mensaje);
 }
-
