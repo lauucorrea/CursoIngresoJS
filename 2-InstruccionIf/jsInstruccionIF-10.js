@@ -1,7 +1,7 @@
-let numNota;
+
 function mostrar()
 {
-	randNum = Math.random() * (10 - 1) + 1;
+	let	randNum = Math.random() * (10 - 1) + 1;
 
 	if(randNum >= 9 && randNum <= 10){
 		alert ("EXCELENTE, tu nota es:" + randNum.toFixed(2));

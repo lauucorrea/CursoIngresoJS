@@ -1,7 +1,7 @@
-let edad;
+
 function mostrar()
 {
-    edad = parseInt(document.getElementById("txtIdEdad").value);
+    let edad = parseInt(document.getElementById("txtIdEdad").value);
     console.log(edad);
     if(edad < 13){
         alert("es un niño");
