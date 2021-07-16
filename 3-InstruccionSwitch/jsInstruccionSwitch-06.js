@@ -1,15 +1,15 @@
 function mostrar() {
-  let varHora = parseInt(document.getElementById("txtIdHora").value);
+  let hora = parseInt(document.getElementById("txtIdHora").value);
 
   switch (true)
   {
-    case varHora >= 7 && varHora <= 11:
+    case hora >= 7 && hora <= 11:
       alert("es de mañana");
       break;
-    case varHora >= 12 && varHora <= 19:
+    case hora >= 12 && hora <= 19:
       alert("es de tarde");
       break;
-    case (varHora >= 20 && varHora <= 24) || (varHora >= 0 && varHora <= 6):
+    case (hora >= 20 && hora <= 24) || (hora >= 0 && hora <= 6):
       alert("es de noche");
       break;
     default:
