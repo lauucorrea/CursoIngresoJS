@@ -2,6 +2,7 @@ function CalcularPrecio() {
   
   let cantidadLamparas = parseInt(document.getElementById("txtIdCantidad").value);
 
+// si hay lamparitas para comprar, se generan las variables y comienza el codigo.
   if(cantidadLamparas != 0){
 
     let precioOriginal = 35,
@@ -66,6 +67,7 @@ function CalcularPrecio() {
     
 
   }
+  //si la cantidad ingresada es 0, imprime este mensaje
   else{
     alert("La cantidad de lamparas ingresadas es inferior al minimo.");
   }
