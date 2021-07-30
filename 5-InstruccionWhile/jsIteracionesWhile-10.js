@@ -19,8 +19,8 @@ function mostrar()
 		sumaPositivos = 0,
 		cantidadCeros = 0,
 		cantidadPares = 0,
-		promPositivos,
-		promNegativos,
+		promPositivos = 0,
+		promNegativos = 0,
 		difPositivosNegativos,
 		respuesta;
 	
@@ -50,7 +50,7 @@ function mostrar()
 
 			respuesta = prompt("Desea seguir ingresando numeros? si/no");
 
-			while((respuesta != "si" && respuesta != "no") || !isNaN(respuesta)){
+			while(respuesta != "si" && respuesta != "no"){
 				alert("Valor incorrecto. responda correctamente");
 				respuesta = prompt("Desea seguir ingresando numeros? si/no");
 			}
@@ -59,40 +59,16 @@ function mostrar()
 	
 	if(cantidadPositivos > 0){
 		promPositivos = sumaPositivos / cantidadPositivos;
-		alert("El promedio de positivos es de: " + promPositivos);
-		//document.write("El promedio de positivos es de: " + promPositivos + "</br>");
-	}else{
-		alert("No hay numeros positivos");
-		//document.write("No hay numeros positivos </br>");
 	}
+	document.write("El promedio de positivos es de: " + promPositivos + "</br>");
 
 	if(cantidadNegativos > 0){
 		promNegativos = sumaNegativos / cantidadNegativos;
-		alert("El promedio de negativos es de: " + promNegativos);
-		//document.write("El promedio de negativos es de: " + promNegativos + "</br>");
-	}else{
-		alert("No hay numeros negativos");
-		//document.write("No hay numeros negativos </br>");
 	}
+	document.write("El promedio de negativos es de: " + promNegativos + "</br>");
 
 	difPositivosNegativos = cantidadPositivos - cantidadNegativos;
 
-	/////////////////////////////////////////////////////////////////////////////////
-	/*MUESTREO CON ALERTS*/
-
-	alert("La cantidad de positivos es de: " + cantidadPositivos);
-	alert("La cantidad de negativos es de: " + cantidadNegativos);
-	
-	alert("La suma de positivos es de: " + sumaPositivos);
-	alert("La suma de negativos es de: " + sumaNegativos);
-	
-	alert("La cantidad de numeros pares es de: " + cantidadPares);
-	alert("La suma de ceros es de: " + cantidadCeros);
-	alert("La diferencia de positivos y negativos: " + difPositivosNegativos);
-
-	/////////////////////////////////////////////////////////////////////////////////
-	/*MUESTREO CON DOCUMENT.WRITE
-	
 	document.write("-------------------------------------------------------- </br>");
 	document.write("La cantidad de positivos es de: " + cantidadPositivos + "</br>");
 	document.write("La cantidad de negativos es de: " + cantidadNegativos + "</br>");
@@ -103,6 +79,5 @@ function mostrar()
 	document.write("La cantidad de numeros pares es de: " + cantidadPares + "</br>");
 	document.write("La suma de ceros es de: " + cantidadCeros + "</br>");
 	document.write("La diferencia de positivos y negativos: " + difPositivosNegativos + "</br>");
-	*/
 	
 }//FIN DE LA FUNCIÓN

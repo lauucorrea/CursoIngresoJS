@@ -4,8 +4,8 @@ mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
 {	
 	let numeroIngresado,
-		numMax = 0,
-		numMin = 0,
+		numMax,
+		numMin,
 		flag = 1,
 		respuesta;
 	
@@ -17,19 +17,18 @@ function mostrar()
 				numeroIngresado = parseInt(prompt("Ingrese un numero valido"));
 			}
 
-			if (flag) {
-				numMax = numeroIngresado;
-				numMin = numeroIngresado;
-				flag = 0;
-			} else {
-				if (numeroIngresado > numMax) {
-					numMax = numeroIngresado;
-				}
-				else if (numeroIngresado < numMin) {
-					numMin = numeroIngresado;
-				}
-			}
+			if (flag || numeroIngresado > numMax) {
 
+				numMax = numeroIngresado;	
+			
+			}
+			else if (flag || numeroIngresado < numMax) {
+				
+				numMin = numeroIngresado;
+
+			}
+			
+			flag = 0;
 			respuesta = prompt("Desea seguir ingresando numeros? si/no");
 
 			while((respuesta != "si" && respuesta != "no") || !isNaN(respuesta)){

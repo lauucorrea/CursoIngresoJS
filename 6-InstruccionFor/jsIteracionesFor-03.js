@@ -1,8 +1,9 @@
 function mostrar()
 {
+	let contadorVeces = parseInt(prompt("Cuantas veces desea mostrar el mensaje?"));
 
-	var repetciones = prompt("ingrese el número de repeticiones");
-	alert("ok");
-
+	for(let i=0; i<=contadorVeces; i++){
+		document.write("Hola UTN FRA </br>");
+	}
 
 }//FIN DE LA FUNCIÓN
